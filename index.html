@@ -5,10 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noter | Your best notes app</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <script src="./scripts/main.js" defer></script>
 </head>
 <body>
-    
 
+    <div class="modal-container">
+        <div class="modal">
+            <div class="form">
+                <div class="modal-header">
+                    <h1>Enter Note</h1>
+                    <span id="closeModal">❌</span>
+                </div>
+                <div class="form-contents">
+                    <input type="text" class="heading-input" placeholder="Heading">
+                    <textarea name="contents" placeholder="Note contents" id="" cols="30" rows="10"></textarea>
+                    <button type="button" class="btn" id="addNote">Add note ➕</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
     <header class="header">
         <div class="header-container">
             <div class="logo-container">
@@ -17,7 +33,7 @@
             <div class="right-header__contents">
                 <div class="new-note_btn">
                     <img src="./imgs/icons/pen_editing.svg" class="icon editingpen mg-r-10" alt="pencil icon">
-                    <a href="#"><p>New Note</p></a>
+                    <a href="#" id="newNote"><p>New Note</p></a>
                     <img src="./imgs/icons/dark_mode__active.svg" class="mode-status" alt="Active/Deactive dark mode">
                 </div>
             </div>
@@ -59,7 +75,25 @@
                 </div>
             </div>
 
-            
+            <div class="note-card">
+                <div class="card-heading">
+                    <h5>Hello World</h5>
+                    <img src="./imgs/icons/delete.svg" class="icon" alt="delete icon">
+                </div>
+                <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut eveniet deserunt corporis accusamus est? Magni, doloribus! Assumenda harum aspernatur vero, maiores quasi eveniet delectus numquam reprehenderit, labore dolore doloribus.</p>
+                </div>
+            </div>
+
+            <div class="note-card">
+                <div class="card-heading">
+                    <h5>Hello World</h5>
+                    <img src="./imgs/icons/delete.svg" class="icon" alt="delete icon">
+                </div>
+                <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut eveniet deserunt corporis accusamus est? Magni, doloribus! Assumenda harum aspernatur vero, maiores quasi eveniet delectus numquam reprehenderit, labore dolore doloribus.</p>
+                </div>
+            </div>
 
         </div>
 
